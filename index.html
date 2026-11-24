@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEED : motos et casques | Démo par Damel Dev</title>
+    <meta
+      name="description"
+      content="Site de démonstration d'une marque de motos fictive : casques, modèles et fiabilité. Intégration front-end réalisée par Damel Dev."
+    />
+    <meta name="author" content="Damel Dev" />
+    <meta name="theme-color" content="#f0a13a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="STEED : motos et casques | Démo par Damel Dev" />
+    <meta
+      property="og:description"
+      content="Site de démonstration d'une marque de motos fictive : casques, modèles et fiabilité."
+    />
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600;700;800&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav aria-label="Navigation principale">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#home">STEED</a>
+          </div>
+          <button
+            type="button"
+            class="nav__menu__btn"
+            id="menu-btn"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <i class="ri-menu-line" aria-hidden="true"></i>
+          </button>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">ACCUEIL</a></li>
+          <li><a href="#about">À PROPOS</a></li>
+          <li><a href="#models">MODÈLES</a></li>
+          <li><a href="#tech">TECHNOLOGIE</a></li>
+        </ul>
+        <div class="nav__btns" aria-hidden="true"></div>
+      </nav>
+
+      <div class="section__container header__container">
+        <h1>STEED, LA MOTO CONÇUE POUR DOMINER LA ROUTE</h1>
+        <p class="section__description">
+          Conçue pour la vitesse, la précision et l'endurance, cette machine est
+          faite pour dominer la route.
+        </p>
+        <div class="header__link">
+          <a href="#models">
+            <span><i class="ri-arrow-right-long-line" aria-hidden="true"></i></span>
+            Découvrir les modèles
+          </a>
+        </div>
+        <img
+          src="assets/header.webp"
+          alt="Moto rétro noire et blanche avec un casque posé sur la selle"
+          width="1091"
+          height="537"
+          fetchpriority="high"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="shop">
+        <div class="section__container shop__container">
+          <h2 class="sr-only">Notre sélection de casques</h2>
+          <div class="shop__card">
+            <p>CASQUE</p>
+            <h3>CASQUE MODULABLE MONZA</h3>
+            <img
+              src="assets/shop-1.webp"
+              alt="Casque modulable noir, gris et jaune fluo"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <div>
+              <span>Exclusif</span>
+            </div>
+          </div>
+          <div class="shop__card">
+            <p>CASQUE</p>
+            <h3>AXOR APEX - HEX-2</h3>
+            <img
+              src="assets/shop-2.webp"
+              alt="Casque intégral blanc, rouge et noir"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <div>
+              <span>Exclusif</span>
+            </div>
+          </div>
+          <div class="shop__card">
+            <p>CASQUE</p>
+            <h3>BELL SRT MODULAR</h3>
+            <img
+              src="assets/shop-3.webp"
+              alt="Casque intégral blanc avec visière teintée"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+            <div>
+              <span>Exclusif</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="section__container about__container">
+          <div class="about__image">
+            <img
+              src="assets/about.webp"
+              alt="Motard casqué enfilant ses gants, assis sur une moto rétro"
+              width="481"
+              height="476"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__content">
+            <h2 class="section__header">
+              Découvrez l'alliance de la puissance et de la précision avec STEED
+            </h2>
+            <p class="section__description">
+              STEED n'est pas qu'une moto : elle incarne la vitesse, l'innovation
+              et une ingénierie de haut niveau.
+            </p>
+            <p class="section__description">
+              Pensée pour les pilotes en quête de sensations fortes et de
+              technologies de pointe, STEED offre une expérience de conduite
+              inégalée grâce à son design aérodynamique, son moteur puissant et
+              ses équipements avancés. Que vous parcouriez les grandes routes ou
+              les rues de la ville, STEED transforme chaque trajet en aventure.
+            </p>
+            <div class="about__stats">
+              <div>
+                <p class="stat__value">632</p>
+                <p>EMPLOYÉS</p>
+              </div>
+              <div>
+                <p class="stat__value">957</p>
+                <p>MOTOS</p>
+              </div>
+              <div>
+                <p class="stat__value">75</p>
+                <p>CONCESSIONS</p>
+              </div>
+              <div>
+                <p class="stat__value">3,5 M</p>
+                <p>BÉNÉFICES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose" id="models">
+        <div class="section__container choose__container">
+          <div class="choose__header">
+            <h2 class="section__header">CHOISISSEZ VOTRE MOTO PRÉFÉRÉE</h2>
+            <p>QUATRE MODÈLES, QUATRE STYLES</p>
+          </div>
+          <div class="swiper" aria-label="Galerie des modèles de motos">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="choose__card">
+                  <div class="choose__card__content">
+                    <p>ROADSTER</p>
+                    <h3>R7</h3>
+                  </div>
+                  <img
+                    src="assets/choose-1.webp"
+                    alt="Moto rétro noire et blanche vue de trois quarts dans la pénombre"
+                    width="600"
+                    height="399"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="choose__card">
+                  <div class="choose__card__content">
+                    <p>CRUISER</p>
+                    <h3>X1</h3>
+                  </div>
+                  <img
+                    src="assets/choose-2.webp"
+                    alt="Moto rétro vue de côté, réservoir blanc et doré"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="choose__card">
+                  <div class="choose__card__content">
+                    <p>SPORTIVE</p>
+                    <h3>S9</h3>
+                  </div>
+                  <img
+                    src="assets/choose-3.webp"
+                    alt="Gros plan sur le réservoir blanc et doré d'une moto rétro"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="choose__card">
+                  <div class="choose__card__content">
+                    <p>AVENTURE</p>
+                    <h3>V4</h3>
+                  </div>
+                  <img
+                    src="assets/choose-4.webp"
+                    alt="Moto rétro de profil, réservoir blanc et doré, sur fond noir"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner" id="tech">
+        <div class="section__container banner__container">
+          <h2 class="sr-only">Technologie et points forts</h2>
+          <p>SUSPENSION<span></span></p>
+          <p>FREINS<span></span></p>
+          <p>TRANSMISSION<span></span></p>
+          <p><span></span>INJECTION</p>
+          <p><span></span>ADHÉRENCE</p>
+          <p><span></span>FIABILITÉ</p>
+          <img
+            src="assets/banner.webp"
+            alt="Bloc moteur vu de trois quarts"
+            width="388"
+            height="438"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h2>À PROPOS</h2>
+          <p class="section__description">
+            Découvrez la puissance d'un design de pointe et d'une ingénierie
+            haute performance. Roulez en toute confiance et vivez l'aventure
+            comme jamais auparavant !
+          </p>
+        </div>
+        <div class="footer__col">
+          <h2>SERVICES</h2>
+          <ul class="footer__links">
+            <li>Nettoyage du moteur</li>
+            <li>Entretien complet</li>
+            <li>Réservation d'un essai</li>
+            <li>Solutions de financement</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2>NAVIGATION</h2>
+          <ul class="footer__links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#models">Modèles</a></li>
+            <li><a href="#tech">Technologie</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h2>MODÈLES</h2>
+          <ul class="footer__links">
+            <li>STEED X1</li>
+            <li>STEED Raptor</li>
+            <li>STEED TurboMax</li>
+            <li>STEED Cruiser</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <p>
+          © 2026 <a href="https://damel.vercel.app/" rel="noopener">Damel Dev</a>.
+          Site de démonstration.
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/damiti-elie-eric-ouattara"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de Damel Dev"
+              ><i class="ri-linkedin-fill" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ouattaradamitidev-prog"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub de Damel Dev"
+              ><i class="ri-github-fill" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
